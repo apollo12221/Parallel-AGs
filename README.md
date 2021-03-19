@@ -30,7 +30,7 @@ $ ./setup.sh
 $ R
 > library(attackgraph)
 > myAG <- ag_generator()
-
+```
 A successful installation should obtain the following results:
 
 ```
