@@ -34,6 +34,7 @@ $ R
 A successful installation should see the following printout:
 
 ```
+...
 [1] "/home/ming/R/x86_64-pc-linux-gnu-library/3.6/attackgraph/lib/app.so"
 [1] "R: shared object loading successful!"
 [1] "R: call the .C function to invoke AG generator function!"
