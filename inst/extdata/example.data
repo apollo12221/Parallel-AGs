@@ -1,0 +1,42 @@
+INSERT INTO asset VALUES
+(0, 'host0'),
+(1, 'host1'),
+(2, 'host2'),
+(3, 'host3'),
+(4, 'host4');
+INSERT INTO quality VALUES
+(0, 'root', '=', 'true'),
+(1, 'os', '=', 'v1'),
+(2, 'os', '=', 'v2'),
+(3, 'os', '=', 'v3'),
+(4, 'os', '=', 'v4');
+INSERT INTO topology VALUES
+(0, 1, '->', 'conn', '', ''),
+(0, 4, '->', 'conn', '', ''),
+(1, 2, '->', 'conn', '', ''),
+(2, 3, '->', 'conn', '', ''),
+(3, 2, '->', 'conn', '', ''),
+(4, 3, '->', 'conn', '', '');
+INSERT INTO exploit VALUES
+(0, 'e0', 2),
+(1, 'e1', 2),
+(2, 'e2', 2),
+(3, 'e3', 2);
+INSERT INTO exploit_precondition VALUES
+(0, 0, 0, 0, 0, 'root', 'true', '=', '(null)'),
+(1, 0, 0, 1, 0, 'os', 'v1', '=', '(null)'),
+(2, 0, 1, 0, 1, 'conn', '', '', '->'),
+(3, 1, 0, 0, 0, 'root', 'true', '=', '(null)'),
+(4, 1, 0, 1, 0, 'os', 'v2', '=', '(null)'),
+(5, 1, 1, 0, 1, 'conn', '', '', '->'),
+(6, 2, 0, 0, 0, 'root', 'true', '=', '(null)'),
+(7, 2, 0, 1, 0, 'os', 'v3', '=', '(null)'),
+(8, 2, 1, 0, 1, 'conn', '', '', '->'),
+(9, 3, 0, 0, 0, 'root', 'true', '=', '(null)'),
+(10, 3, 0, 1, 0, 'os', 'v4', '=', '(null)'),
+(11, 3, 1, 0, 1, 'conn', '', '', '->');
+INSERT INTO exploit_postcondition VALUES
+(0, 0, 0, 1, 0, 'root', 'true', '=', '(null)', 'insert'),
+(1, 1, 0, 1, 0, 'root', 'true', '=', '(null)', 'insert'),
+(2, 2, 0, 1, 0, 'root', 'true', '=', '(null)', 'insert'),
+(3, 3, 0, 1, 0, 'root', 'true', '=', '(null)', 'insert');
