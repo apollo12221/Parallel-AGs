@@ -3,8 +3,8 @@ An R package for parallel Attack Graph generation and analysis
 
 ## Description
 
-This is an R package for Attack Graph (AG) generation and analysis. Functions for AG generation takes as input the target network modeling and vulnerability
-information and generates the output AG with node and edges reported. Functions for AG analysis takes as input the AG node and edge matrix created by AG 
+This is an R package for Attack Graph (AG) generation and analysis. Functions for AG generation take as input the target network modeling and vulnerability
+information and generate the output AG with node and edges reported. Functions for AG analysis takes as input the AG node and edge matrix created by AG 
 generation functions and performs centrality and other analyses. Functions for network creation creates target networks for the AG generation functions.
 
 ## System requirement
