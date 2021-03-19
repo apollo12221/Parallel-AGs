@@ -29,57 +29,17 @@ $ ./setup.sh
 ```
 $ R
 > library(attackgraph)
-> ag_generator()
+> myAG <- ag_generator()
 
-A successful installation should see the following printout:
-
-```
-
-[1] ""
-[1] "R: Done !!!"
-[1] "R: the number of edges in the AG is 16"
-[1] "R: The number of nodes in the AG is 11"
-$node.matrix
-      node_id num_qualities num_topologies
- [1,]       0             5              6
- [2,]       1             6              6
- [3,]       2             6              6
- [4,]       3             7              6
- [5,]       4             7              6
- [6,]       5             7              6
- [7,]       6             8              6
- [8,]       7             8              6
- [9,]       8             8              6
-[10,]       9             8              6
-[11,]      10             9              6
-
-$edge.matrix
-      edge_id from_node to_node exploit_id asset_id
- [1,]       0         0       1          0        1
- [2,]       1         0       2          3        4
- [3,]       2         1       3          1        2
- [4,]       3         1       4          3        4
- [5,]       4         2       4          0        1
- [6,]       5         2       5          2        3
- [7,]       6         3       6          2        3
- [8,]       7         3       7          3        4
- [9,]       8         4       7          1        2
-[10,]       9         4       8          2        3
-[11,]      10         5       8          0        1
-[12,]      11         5       9          1        2
-[13,]      12         6      10          3        4
-[14,]      13         7      10          2        3
-[15,]      14         8      10          1        2
-[16,]      15         9      10          0        1
-
-$nNodes
-[1] 11
-
-$nEdges
-[1] 16
+A successful installation should obtain the following results:
 
 ```
+> myAG$nNodes
+> 11
+> myAG$nEdges
+> 16
 
+```
 
 ## Technical support
 
