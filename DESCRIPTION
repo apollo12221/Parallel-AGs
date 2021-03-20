@@ -17,5 +17,4 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Published: 2021-01-01
 Imports: 
-    igraph, 
-    ggplot2
+    igraph
