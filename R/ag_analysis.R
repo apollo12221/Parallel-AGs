@@ -144,7 +144,7 @@ APC <- function(edge.matrix, data.matrix, data.weight.vector=rep(1/ncol(data.mat
 
 
 
-#' Analyze an Attack Graph data with edge kpath entrality (EKPC)
+#' Analyze an Attack Graph data with edge K-path centrality (EKPC)
 #'
 #' This function computes edge kpath centrality (EKPC) for given Attack Graphs
 #'

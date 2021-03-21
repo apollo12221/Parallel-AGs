@@ -82,8 +82,8 @@ ag_generator <- function(filename.str=system.file("extdata","example.data",packa
     g4 <- igraph::graph_from_data_frame(df.g4, directed=T)
     layout4 <- igraph::layout_as_tree(g4)
     plot(g4, edge.label=paste("(e", mtx.edges[,"exploit_id"], ",a", mtx.edges[, "asset_id"], ")", sep=""),
-         vertex.label.cex=1.5, edge.label.cex=0.8,
-         layout=layout4, main=paste("Attack Graph with", nN, "nodes and", nE, "edges)"), main.cex=1
+         vertex.label.cex=1.5, edge.label.cex=1,
+         layout=layout4, main=paste("Attack Graph with", nN, "nodes and", nE, "edges"), main.cex=1
     )
   }
   return(list(node.matrix=mtx.nodes, edge.matrix=mtx.edges, nNodes=nN, nEdges=nE))
@@ -172,10 +172,10 @@ create_network <- function(nv=5){
     nid <- g2.df[g2.df[,2]==nid,1][1]
     max.depth <- max.depth + 1
   }
-  message("graph basic information:")
-  message(paste("Number of nodes is", nN))
-  message(paste("Number of edges is", nE))
-  message(paste("Depth of the graph is", max.depth))
+  #message("graph basic information:")
+  #message(paste("Number of nodes is", nN))
+  #message(paste("Number of edges is", nE))
+  #message(paste("Depth of the graph is", max.depth))
 
   g2.df[,3] <- 0 # edge status column, indicating if an edge has been traversed
   g2.df[,4] <- 0 # edge label
